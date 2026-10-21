@@ -20,3 +20,15 @@ body{background-image:radial-gradient(ellipse at 85% 8%,rgba(207,139,64,.09),tra
 .brand-name small{font-size:10px;letter-spacing:1.5px}
 .brand-name strong{font-size:25px;letter-spacing:-1px}
 @media(max-width:700px){.brand-badge{width:180px;min-height:64px}.brand-badge img{width:52px;height:64px}.brand-name strong{font-size:24px}}
+
+.brand-introduction{margin:24px 40px 0;padding:42px;background:#f8eedf;border:1px solid #e9d9c6;border-radius:14px}
+.brand-introduction .eyebrow{margin-bottom:16px;letter-spacing:1.4px}
+.brand-introduction h2{font-size:clamp(26px,3vw,36px);line-height:1.55;word-break:keep-all}
+.introduction-copy{max-width:720px;margin-top:22px;color:#705747;font-size:15px;line-height:1.95;word-break:keep-all;overflow-wrap:anywhere}
+.introduction-copy p{margin:0 0 12px}
+.introduction-services{margin:24px 0;color:#844923;font-size:14px;font-weight:700;line-height:1.9;word-break:keep-all}
+.introduction-contact{border-top:1px solid #e5ceb0;padding-top:18px;color:#705747;font-size:13px;line-height:1.9}
+.introduction-contact p{display:flex;align-items:flex-start;gap:10px;margin:6px 0}
+.introduction-contact .ui-icon{width:17px;height:17px;margin-top:4px}
+.introduction-contact a{display:inline-block;text-decoration:underline;text-underline-offset:4px}
+@media(max-width:700px){.brand-introduction{margin:18px 24px 0;padding:28px 22px}.introduction-copy{font-size:14px}.introduction-services{font-size:13px}.introduction-contact{font-size:12px}}

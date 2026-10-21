@@ -10,6 +10,19 @@ export default function Home() {
     </header>
     <main>
       <HeroCarousel/>
+      <section className="brand-introduction" aria-labelledby="introduction-title">
+        <p className="eyebrow">30년 경력 · 가위닥터 사사끼</p>
+        <h2 id="introduction-title">제대로 A/S 받으면,<br/>미용이 즐거워집니다.</h2>
+        <div className="introduction-copy">
+          <p>국내 가위 A/S 최고 전문가를 자부하는 가위닥터 사사끼입니다. 30년의 경험으로 가위날 손상 없이 날을 재생합니다.</p>
+          <p>가위가 얼마나 좋아지는지 보여드리겠습니다. 불만족 시 가위값 환불·배상을 약속할 만큼 자신 있게 A/S해 드립니다.</p>
+        </div>
+        <p className="introduction-services">헤어 가위 · 애견 가위 판매 및 A/S · 클리퍼 날 연마</p>
+        <div className="introduction-contact">
+          <p><Icon name="phone"/><span>대표 상담 <a href="tel:01065644992">010-6564-4992</a> · <a href="tel:01096444689">010-9644-4689</a></span></p>
+          <p><Icon name="pin"/><span>부산광역시 수영구 광남로172번길 10, 민락화신맨션 2동 102호</span></p>
+        </div>
+      </section>
       <section id="services" className="services">
         <div className="section-heading"><div><p className="eyebrow">가위닥터 사사끼의 서비스</p><h2>오래 쓰는 가위의 곁에서.</h2></div><p>미용 가위와 애견 가위, 연마부터 수리까지.</p></div>
         <div className="service-grid">
@@ -20,7 +33,7 @@ export default function Home() {
         <div className="service-notes" aria-label="수리 서비스 안내">
           <div><span className="note-icon"><Icon name="package"/></span><h3>택배 접수 가능</h3><p>택배로 가위 수리를 맡기실 수 있습니다.<br/>발송 전 전화로 접수 안내를 받아주세요.</p></div>
           <div><span className="note-icon"><Icon name="users"/></span><h3>대량 수리 할인</h3><p>미용학원 등 대량 수리 요청 시 할인 적용.<br/>수량과 가위 종류를 말씀해주세요.</p></div>
-          <div><span className="note-icon"><Icon name="shield"/></span><h3>불만족 시 100% 환불</h3><p>수리 결과에 대한 책임을 약속합니다.<br/>불편한 점이 있다면 연락해주세요.</p></div>
+          <div><span className="note-icon"><Icon name="shield"/></span><h3>불만족 시 가위값 환불·배상</h3><p>수리 결과에 대한 책임을 약속합니다.<br/>불편한 점이 있다면 연락해주세요.</p></div>
         </div>
       </section>
       <section id="repair-process" className="repair-process" aria-labelledby="repair-process-title">
