@@ -8,35 +8,23 @@ export default function Home() {
   return <>
     <header className="header">
       <a className="brand-badge" href="#" aria-label="가위닥터 사사끼 로고, 페이지 맨 위로"><Image src="/images/scissor-doctor-logo.png" alt="파란색 SD 모노그램과 가위 문양" width={60} height={72}/><span className="brand-name"><small>SINCE 1995</small><strong>가위닥터</strong></span></a>
-      <nav aria-label="주요 메뉴"><a href="#services"><Icon name="scissors"/>연마·수리</a><a href="#repair-process"><Icon name="clipboard"/>접수 안내</a><a href="#about"><Icon name="user"/>장인 소개</a><a href="#contact"><Icon name="phone"/>상담 문의</a><a className="store-nav-link" href={STORE_URL} target="_blank" rel="noopener noreferrer"><Icon name="package"/>가위 구매<span className="sr-only"> · 스마트스토어, 새 창</span> ↗</a></nav>
+      <nav aria-label="주요 메뉴"><a href="#shop"><Icon name="scissors"/>가위 쇼핑</a><a href="#care-benefits"><Icon name="shield"/>구매 혜택</a><a href="#services"><Icon name="scissors"/>연마·수리</a><a href="#about"><Icon name="user"/>장인 소개</a><a href="#contact"><Icon name="phone"/>상담 문의</a><a className="store-nav-link" href={STORE_URL} target="_blank" rel="noopener noreferrer"><Icon name="package"/>가위 구매<span className="sr-only"> · 스마트스토어, 새 창</span> ↗</a></nav>
     </header>
     <main>
       <HeroCarousel/>
-      <section className="brand-introduction" aria-labelledby="introduction-title">
-        <p className="eyebrow">30년 경력 · 가위닥터 사사끼</p>
-        <h2 id="introduction-title">제대로 A/S 받으면,<br/>미용이 즐거워집니다.</h2>
-        <div className="introduction-copy">
-          <p>국내 가위 A/S 최고 전문가를 자부하는 가위닥터 사사끼입니다. 30년의 경험으로 가위날 손상 없이 날을 재생합니다.</p>
-          <p>가위가 얼마나 좋아지는지 보여드리겠습니다. 불만족 시 가위값 환불·배상을 약속할 만큼 자신 있게 A/S해 드립니다.</p>
+      <section id="shop" className="shop-section" aria-labelledby="shop-title">
+        <div className="section-heading"><div><p className="eyebrow">FIND YOUR SCISSORS</p><h2 id="shop-title">당신의 다음 가위를 만나보세요.</h2></div><p>헤어부터 애견미용까지, 용도에 맞는 선택.</p></div>
+        <div className="shop-grid">
+          <a className="shop-card" href={STORE_URL} target="_blank" rel="noopener noreferrer">
+            <div className="shop-image"><Image src="/images/hero-hair-autumn.png" alt="미용 가위와 빗을 배치한 헤어 가위 연출 이미지" fill sizes="(max-width: 700px) calc(100vw - 48px), 550px"/></div>
+            <div className="shop-card-copy"><p className="eyebrow">HAIR SCISSORS</p><h3>헤어 미용 가위</h3><p>매일 손에 쥐는 한 자루, 내 손에 맞게.</p><span className="shop-card-action">스마트스토어에서 살펴보기 ↗<span className="sr-only"> · 새 창</span></span></div>
+          </a>
+          <a className="shop-card" href={STORE_URL} target="_blank" rel="noopener noreferrer">
+            <div className="shop-image"><Image src="/images/hero-pet-autumn.png" alt="린넨 위에 놓인 애견미용 커브 가위 연출 이미지" fill sizes="(max-width: 700px) calc(100vw - 48px), 550px"/></div>
+            <div className="shop-card-copy"><p className="eyebrow">PET GROOMING SCISSORS</p><h3>애견미용 가위</h3><p>부드러운 라인과 섬세한 마무리를 위해.</p><span className="shop-card-action">스마트스토어에서 살펴보기 ↗<span className="sr-only"> · 새 창</span></span></div>
+          </a>
         </div>
-        <p className="introduction-services">헤어 가위 · 애견 가위 판매 및 A/S · 클리퍼 날 연마</p>
-        <div className="introduction-contact">
-          <p><Icon name="phone"/><span>대표 상담 <a href="tel:01065644992">010-6564-4992</a> · <a href="tel:01096444689">010-9644-4689</a></span></p>
-          <p><Icon name="pin"/><span>부산광역시 수영구 광남로172번길 10, 민락화신맨션 2동 102호</span></p>
-        </div>
-      </section>
-      <section id="services" className="services">
-        <div className="section-heading"><div><p className="eyebrow">가위닥터 사사끼의 서비스</p><h2>오래 쓰는 가위의 곁에서.</h2></div><p>미용 가위와 애견 가위, 연마부터 수리까지.</p></div>
-        <div className="service-grid">
-          <article><div className="service-art service-photo"><Image src="/images/scissor-sharpening-autumn.png" alt="숫돌 위에 놓인 일자 미용 가위, 정밀 연마 서비스 이미지" fill sizes="(max-width: 700px) calc(100vw - 48px), 360px"/></div><p className="service-type"><Icon name="scissors"/>01 / 정밀 연마</p><h3>무뎌진 날을 다듬다</h3><p>잘 들지 않는 미용·애견 가위의 날을 연마합니다.<br/>매일의 커트를 위한 섬세한 손길.</p></article>
-          <article><div className="service-art service-photo"><Image src="/images/scissor-restoration-autumn.png" alt="가을 햇살이 비치는 크림색 린넨 위 커브 가위, 날 복원 서비스 이미지" fill sizes="(max-width: 700px) calc(100vw - 48px), 360px"/></div><p className="service-type"><Icon name="sparkles"/>02 / 날 복원</p><h3>절삭감을 되살리다</h3><p>날을 섬세하게 다듬는 정밀 복원.<br/>가위날 하나에도 30년의 경험을 담습니다.</p></article>
-          <article><div className="service-art service-photo"><Image src="/images/scissor-repair-autumn.png" alt="숱 가위와 정밀 드라이버, 수리 A/S 서비스 이미지" fill sizes="(max-width: 700px) calc(100vw - 48px), 360px"/></div><p className="service-type"><Icon name="wrench"/>03 / 수리 · A/S</p><h3>불편한 가위를 살피다</h3><p>사사끼 코리아 가위 A/S와 타사 가위 수리.<br/>미용·애견 가위의 불편을 상담해주세요.</p></article>
-        </div>
-        <div className="service-notes" aria-label="수리 서비스 안내">
-          <div><span className="note-icon"><Icon name="package"/></span><h3>택배 접수 가능</h3><p>택배로 가위 수리를 맡기실 수 있습니다.<br/>발송 전 전화로 접수 안내를 받아주세요.</p></div>
-          <div><span className="note-icon"><Icon name="users"/></span><h3>대량 수리 할인</h3><p>미용학원 등 대량 수리 요청 시 할인 적용.<br/>수량과 가위 종류를 말씀해주세요.</p></div>
-          <div><span className="note-icon"><Icon name="shield"/></span><h3>불만족 시 가위값 환불·배상</h3><p>수리 결과에 대한 책임을 약속합니다.<br/>불편한 점이 있다면 연락해주세요.</p></div>
-        </div>
+        <p className="shop-disclaimer">이미지는 연출 이미지입니다. 실제 판매 상품과 가격·재고·구매 조건은 스마트스토어에서 확인해주세요.</p>
       </section>
       <section id="care-benefits" className="care-benefits" aria-labelledby="care-benefits-title">
         <div className="care-heading">
@@ -76,6 +64,33 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <section className="brand-introduction" aria-labelledby="introduction-title">
+        <p className="eyebrow">30년 경력 · 가위닥터 사사끼</p>
+        <h2 id="introduction-title">제대로 A/S 받으면,<br/>미용이 즐거워집니다.</h2>
+        <div className="introduction-copy">
+          <p>국내 가위 A/S 최고 전문가를 자부하는 가위닥터 사사끼입니다. 30년의 경험으로 가위날 손상 없이 날을 재생합니다.</p>
+          <p>가위가 얼마나 좋아지는지 보여드리겠습니다. 불만족 시 가위값 환불·배상을 약속할 만큼 자신 있게 A/S해 드립니다.</p>
+        </div>
+        <p className="introduction-services">헤어 가위 · 애견 가위 판매 및 A/S · 클리퍼 날 연마</p>
+        <div className="introduction-contact">
+          <p><Icon name="phone"/><span>대표 상담 <a href="tel:01065644992">010-6564-4992</a> · <a href="tel:01096444689">010-9644-4689</a></span></p>
+          <p><Icon name="pin"/><span>부산광역시 수영구 광남로172번길 10, 민락화신맨션 2동 102호</span></p>
+        </div>
+      </section>
+      <section id="services" className="services">
+        <div className="section-heading"><div><p className="eyebrow">구매 후에도 든든한 전문 케어</p><h2>좋은 가위, 오래 쓰실 수 있도록.</h2></div><p>미용 가위와 애견 가위, 연마부터 수리까지.</p></div>
+        <div className="service-grid">
+          <article><div className="service-art service-photo"><Image src="/images/scissor-sharpening-autumn.png" alt="숫돌 위에 놓인 일자 미용 가위, 정밀 연마 서비스 이미지" fill sizes="(max-width: 700px) calc(100vw - 48px), 360px"/></div><p className="service-type"><Icon name="scissors"/>01 / 정밀 연마</p><h3>무뎌진 날을 다듬다</h3><p>잘 들지 않는 미용·애견 가위의 날을 연마합니다.<br/>매일의 커트를 위한 섬세한 손길.</p></article>
+          <article><div className="service-art service-photo"><Image src="/images/scissor-restoration-autumn.png" alt="가을 햇살이 비치는 크림색 린넨 위 커브 가위, 날 복원 서비스 이미지" fill sizes="(max-width: 700px) calc(100vw - 48px), 360px"/></div><p className="service-type"><Icon name="sparkles"/>02 / 날 복원</p><h3>절삭감을 되살리다</h3><p>날을 섬세하게 다듬는 정밀 복원.<br/>가위날 하나에도 30년의 경험을 담습니다.</p></article>
+          <article><div className="service-art service-photo"><Image src="/images/scissor-repair-autumn.png" alt="숱 가위와 정밀 드라이버, 수리 A/S 서비스 이미지" fill sizes="(max-width: 700px) calc(100vw - 48px), 360px"/></div><p className="service-type"><Icon name="wrench"/>03 / 수리 · A/S</p><h3>불편한 가위를 살피다</h3><p>사사끼 코리아 가위 A/S와 타사 가위 수리.<br/>미용·애견 가위의 불편을 상담해주세요.</p></article>
+        </div>
+        <div className="service-notes" aria-label="수리 서비스 안내">
+          <div><span className="note-icon"><Icon name="package"/></span><h3>택배 접수 가능</h3><p>택배로 가위 수리를 맡기실 수 있습니다.<br/>발송 전 전화로 접수 안내를 받아주세요.</p></div>
+          <div><span className="note-icon"><Icon name="users"/></span><h3>대량 수리 할인</h3><p>미용학원 등 대량 수리 요청 시 할인 적용.<br/>수량과 가위 종류를 말씀해주세요.</p></div>
+          <div><span className="note-icon"><Icon name="shield"/></span><h3>불만족 시 가위값 환불·배상</h3><p>수리 결과에 대한 책임을 약속합니다.<br/>불편한 점이 있다면 연락해주세요.</p></div>
+        </div>
+      </section>
       <section id="repair-process" className="repair-process" aria-labelledby="repair-process-title">
         <div className="section-heading"><div><p className="eyebrow">수리 접수 안내</p><h2 id="repair-process-title">맡기기 전 상담부터, 수리 후 반송까지.</h2></div><p>택배를 보내기 전, 먼저 전화해주세요.</p></div>
         <ol className="repair-steps">
@@ -101,8 +116,8 @@ export default function Home() {
       </dl>
       <small>© {new Date().getFullYear()} 가위닥터 사사끼</small>
     </footer>
-    <aside className="mobile-contact-bar" aria-label="빠른 전화 상담">
-      <a className="mobile-process-link" href="#repair-process"><Icon name="clipboard"/>접수 안내</a>
+    <aside className="mobile-contact-bar" aria-label="빠른 가위 구매 및 상담">
+      <a className="mobile-store-link" href={STORE_URL} target="_blank" rel="noopener noreferrer"><Icon name="package"/><span>가위 구매 <strong>스마트스토어 ↗</strong></span><span className="sr-only"> · 새 창</span></a>
       <a className="mobile-call-link" href="tel:01065644992" aria-label="가위닥터 사사끼 전화 상담 010-6564-4992">
         <Icon name="phone"/>
         <span>전화 상담 <strong>010-6564-4992</strong></span>

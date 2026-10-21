@@ -62,3 +62,18 @@ body{background-image:radial-gradient(ellipse at 85% 8%,rgba(207,139,64,.09),tra
 .store-button>span[aria-hidden]{margin-left:4px}
 .contact-actions .store-button{font-size:13px;padding:16px 18px;white-space:normal}
 @media(max-width:700px){.header nav .store-nav-link{padding:9px 12px}.store-purchase-actions{flex-direction:column;gap:20px}.store-purchase-actions .store-button{width:100%;font-size:12px;padding:16px 10px}.contact-actions .store-button{align-self:flex-start;max-width:100%;font-size:12px}}
+
+/* Scissors storefront */
+.shop-section{padding:40px 40px 64px;scroll-margin-top:20px}
+.shop-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px}
+.shop-card{display:block;background:#fffdf8;border:1px solid #e9d9c6;border-radius:14px;overflow:hidden;transition:box-shadow .2s}
+.shop-card:hover{box-shadow:0 12px 30px rgba(98,56,25,.12)}
+.shop-image{position:relative;aspect-ratio:4/3;overflow:hidden}.shop-image img{object-fit:cover}
+.shop-card-copy{padding:28px}.shop-card-copy .eyebrow{margin-bottom:12px;font-size:10px;letter-spacing:1.8px}
+.shop-card-copy h3{font-size:27px;font-weight:600;margin:0 0 12px}.shop-card-copy>p:not(.eyebrow){font-size:14px;line-height:1.8;color:#705747;margin:0 0 22px;word-break:keep-all}
+.shop-card-action{display:inline-block;color:#844923;font-size:13px;font-weight:700;border-bottom:1px solid #b76b36;padding-bottom:5px;line-height:1.8}
+.shop-disclaimer{font-size:12px;color:#705747;line-height:1.8;margin:18px 0 0;word-break:keep-all}
+.carousel-copy .eyebrow{line-height:1.8}.carousel-copy h2{font-size:clamp(28px,3vw,41px)}
+.header nav{gap:16px}.care-benefits{margin-bottom:48px}.brand-introduction{margin-top:0}
+@media(max-width:700px){.shop-section{padding:24px 24px 40px}.shop-grid{grid-template-columns:1fr;gap:22px}.shop-card-copy{padding:24px}.shop-card-copy h3{font-size:24px}.care-benefits{margin-bottom:32px}.carousel-copy h2{font-size:clamp(24px,6.6vw,32px)}.header nav{justify-content:flex-start;gap:14px}.mobile-store-link{display:flex;align-items:center;justify-content:center;gap:8px;flex:1;min-width:0;min-height:48px;padding:8px;border:1px solid #844923;border-radius:6px;color:#844923;font-size:12px;text-align:center;background:#fffaf3}.mobile-store-link strong{display:block;font-size:13px;margin-top:3px}.mobile-contact-bar .mobile-call-link{min-width:0}.mobile-call-link strong{font-size:13px}}
+@media(prefers-reduced-motion:reduce){.shop-card{transition:none}}
