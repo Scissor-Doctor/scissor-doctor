@@ -39,3 +39,7 @@ npm start
 ```
 
 브랜드 소개용 한 페이지이며 주문·결제 기능은 포함하지 않습니다.
+
+## 겨울 테마
+
+전체 화면은 눈빛 화이트·아이스 블루·네이비 색상을 사용합니다. 메인 광고와 서비스 카드에는 겨울 콘셉트의 `hero-sharpening-winter.png`, `hero-hair-winter.png`, `hero-pet-winter.png`를 사용합니다. 로고는 파란색 SD·가위 문양의 `scissor-doctor-logo.png`이며 브라우저 아이콘에도 적용했습니다.
