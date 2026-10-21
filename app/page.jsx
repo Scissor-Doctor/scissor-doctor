@@ -36,6 +36,38 @@ export default function Home() {
           <div><span className="note-icon"><Icon name="shield"/></span><h3>불만족 시 가위값 환불·배상</h3><p>수리 결과에 대한 책임을 약속합니다.<br/>불편한 점이 있다면 연락해주세요.</p></div>
         </div>
       </section>
+      <section id="care-benefits" className="care-benefits" aria-labelledby="care-benefits-title">
+        <div className="care-heading">
+          <p className="eyebrow">AFTER CARE BENEFIT · 가위 구매 고객 혜택</p>
+          <h2 id="care-benefits-title">안심하고 써보세요.<br/><span>가위닥터 안심 케어 보증</span></h2>
+          <p>비용과 리스크는 가위닥터가 안겠습니다.<br/>원장님은 직접 써보고 결정하세요.</p>
+        </div>
+        <ol className="care-benefit-grid">
+          <li>
+            <div className="care-card-top"><span className="care-number">01</span><Icon name="package"/></div>
+            <h3>3일 안심 체험</h3>
+            <p>직접 써보고 손에 맞지 않으면<br/>기준 내 반품·교환을 도와드립니다.</p>
+            <span className="care-card-label">직접 써보고 결정하세요</span>
+          </li>
+          <li>
+            <div className="care-card-top"><span className="care-number">02</span><Icon name="shield"/></div>
+            <h3>1년 무상 케어</h3>
+            <p>정상적인 사용 중 발생한 제품 문제는 구입 후 1년간 무상 A/S를 제공합니다.</p>
+            <span className="care-card-label">구입 후 1년 무상 A/S</span>
+          </li>
+          <li>
+            <div className="care-card-top"><span className="care-number">03</span><Icon name="scissors"/></div>
+            <h3>평생 책임 관리</h3>
+            <p>제품 수명이 다하는 날까지 가위닥터 기준 혜택으로 지속 관리해 드립니다.</p>
+            <span className="care-card-label">오래 쓰는 가위의 곁에서</span>
+          </li>
+        </ol>
+        <div className="care-conditions">
+          <Icon name="clipboard"/>
+          <div><h3>조건 안내</h3><p>제품 훼손, 구성품 누락, 임의 분해, 비정상 사용 흔적이 있는 경우 반품·교환이 제한될 수 있습니다.</p><p>가위 구매 고객을 위한 혜택입니다. 적용 기준과 관리 혜택의 자세한 내용은 구매 전 상담해주세요.</p></div>
+        </div>
+        <a className="button care-consult" href="tel:01065644992"><Icon name="phone"/>구매·케어 혜택 상담</a>
+      </section>
       <section id="repair-process" className="repair-process" aria-labelledby="repair-process-title">
         <div className="section-heading"><div><p className="eyebrow">수리 접수 안내</p><h2 id="repair-process-title">맡기기 전 상담부터, 수리 후 반송까지.</h2></div><p>택배를 보내기 전, 먼저 전화해주세요.</p></div>
         <ol className="repair-steps">

@@ -39,3 +39,21 @@ body{background-color:#f7fbff;background-image:radial-gradient(ellipse at 85% 3%
 .brand-introduction{background:linear-gradient(125deg,#fff,#e8f3fc);box-shadow:0 8px 30px rgba(35,79,115,.04)}
 .service-art{box-shadow:0 8px 22px rgba(35,79,115,.06)}
 .about-portrait{filter:saturate(.7)}
+
+/* Purchase care benefits, adapted from the supplied Smart Store detail page. */
+.care-benefits{margin:0 40px 80px;padding:48px 32px;background:linear-gradient(145deg,#f9fcff,#e4eef7);border:1px solid #ccdeec;border-radius:18px}
+.care-heading{text-align:center}.care-heading .eyebrow{font-size:11px;letter-spacing:1.8px;line-height:1.8;margin-bottom:18px}
+.care-heading h2{font-size:clamp(26px,3vw,36px);line-height:1.6;word-break:keep-all}.care-heading h2 span{color:#194f78;font-weight:700}
+.care-heading>p:last-child{font-size:15px;line-height:1.9;color:#49647b;margin:18px 0 32px}
+.care-benefit-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;list-style:none;margin:0;padding:0}
+.care-benefit-grid li{display:flex;flex-direction:column;padding:26px 22px;background:linear-gradient(145deg,#fff,#f3f8fc);border:1px solid #d5e3ee;border-radius:12px;box-shadow:0 6px 18px rgba(24,63,96,.05);min-width:0}
+.care-card-top{display:flex;align-items:center;justify-content:space-between;color:#194f78}.care-card-top>.ui-icon{width:32px;height:32px}
+.care-number{display:grid;place-items:center;width:44px;height:52px;color:white;background:linear-gradient(145deg,#347baa,#123b5b);border-radius:4px 4px 16px 16px;font-size:21px;font-variant-numeric:tabular-nums}
+.care-benefit-grid h3{font-size:23px;font-weight:700;color:#194f78;margin:24px 0 14px;word-break:keep-all}
+.care-benefit-grid p{color:#49647b;font-size:14px;line-height:1.9;margin:0 0 22px;word-break:keep-all;overflow-wrap:anywhere}
+.care-card-label{margin-top:auto;padding-top:16px;border-top:1px solid #d5e3ee;font-size:12px;font-weight:700;color:#285f88;line-height:1.8}
+.care-conditions{display:flex;align-items:flex-start;gap:14px;margin-top:20px;padding:22px;background:rgba(255,255,255,.7);border:1px solid #d5e3ee;border-radius:10px;color:#49647b}
+.care-conditions>.ui-icon{width:26px;height:26px;margin-top:3px}.care-conditions h3{font-size:15px;font-weight:700;margin:0 0 8px;color:#18334b}.care-conditions p{margin:5px 0 0;font-size:13px;line-height:1.85;word-break:keep-all;overflow-wrap:anywhere}
+.care-consult{display:flex;width:fit-content;margin:26px auto 0;gap:10px}
+@media(max-width:1000px){.care-benefit-grid{grid-template-columns:1fr}.care-benefit-grid li{padding:24px}.care-benefit-grid h3{margin-top:18px}.care-card-label{margin-top:0}}
+@media(max-width:700px){.care-benefits{margin:0 24px 50px;padding:32px 18px}.care-heading .eyebrow{font-size:10px;letter-spacing:.6px}.care-heading>p:last-child{font-size:13px}.care-benefit-grid h3{font-size:22px}.care-conditions{padding:18px 14px;gap:10px}.care-conditions p{font-size:12px}.care-consult{font-size:12px;padding:16px}}
