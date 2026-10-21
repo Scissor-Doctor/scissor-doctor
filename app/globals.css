@@ -57,3 +57,15 @@ body{background-color:#f7fbff;background-image:radial-gradient(ellipse at 85% 3%
 .care-consult{display:flex;width:fit-content;margin:26px auto 0;gap:10px}
 @media(max-width:1000px){.care-benefit-grid{grid-template-columns:1fr}.care-benefit-grid li{padding:24px}.care-benefit-grid h3{margin-top:18px}.care-card-label{margin-top:0}}
 @media(max-width:700px){.care-benefits{margin:0 24px 50px;padding:32px 18px}.care-heading .eyebrow{font-size:10px;letter-spacing:.6px}.care-heading>p:last-child{font-size:13px}.care-benefit-grid h3{font-size:22px}.care-conditions{padding:18px 14px;gap:10px}.care-conditions p{font-size:12px}.care-consult{font-size:12px;padding:16px}}
+
+/* Smart Store purchase links */
+.header nav .store-nav-link{padding:10px 14px;border:1px solid #194f78;border-radius:6px;color:#194f78;font-weight:700;min-height:42px}
+.header nav{align-items:center}
+.header nav .store-nav-link:hover{background:#e1eef7}
+.store-purchase{text-align:center;margin-top:28px}
+.store-purchase>p{font-size:14px;color:#49647b;line-height:1.8;word-break:keep-all}
+.store-purchase-actions{display:flex;align-items:center;justify-content:center;gap:22px;flex-wrap:wrap}
+.store-button{gap:10px;margin-top:0;justify-content:center;line-height:1.6;text-align:center;font-weight:700}
+.store-button>span[aria-hidden]{margin-left:4px}
+.contact-actions .store-button{font-size:13px;padding:16px 18px;white-space:normal}
+@media(max-width:700px){.header nav .store-nav-link{padding:9px 12px}.store-purchase-actions{flex-direction:column;gap:20px}.store-purchase-actions .store-button{width:100%;font-size:12px;padding:16px 10px}.contact-actions .store-button{align-self:flex-start;max-width:100%;font-size:12px}}

@@ -2,11 +2,13 @@ import Image from 'next/image';
 import Icon from './components/ui-icon';
 import HeroCarousel from './components/hero-carousel';
 
+const STORE_URL = 'https://smartstore.naver.com/kwdt-sasak-dog';
+
 export default function Home() {
   return <>
     <header className="header">
       <a className="brand-badge" href="#" aria-label="가위닥터 사사끼 로고, 페이지 맨 위로"><Image src="/images/scissor-doctor-logo.png" alt="파란색 SD 모노그램과 가위 문양" width={60} height={72}/><span className="brand-name"><small>SINCE 1995</small><strong>가위닥터</strong></span></a>
-      <nav aria-label="주요 메뉴"><a href="#services"><Icon name="scissors"/>연마·수리</a><a href="#repair-process"><Icon name="clipboard"/>접수 안내</a><a href="#about"><Icon name="user"/>장인 소개</a><a href="#contact"><Icon name="phone"/>상담 문의</a></nav>
+      <nav aria-label="주요 메뉴"><a href="#services"><Icon name="scissors"/>연마·수리</a><a href="#repair-process"><Icon name="clipboard"/>접수 안내</a><a href="#about"><Icon name="user"/>장인 소개</a><a href="#contact"><Icon name="phone"/>상담 문의</a><a className="store-nav-link" href={STORE_URL} target="_blank" rel="noopener noreferrer"><Icon name="package"/>가위 구매<span className="sr-only"> · 스마트스토어, 새 창</span> ↗</a></nav>
     </header>
     <main>
       <HeroCarousel/>
@@ -66,7 +68,13 @@ export default function Home() {
           <Icon name="clipboard"/>
           <div><h3>조건 안내</h3><p>제품 훼손, 구성품 누락, 임의 분해, 비정상 사용 흔적이 있는 경우 반품·교환이 제한될 수 있습니다.</p><p>가위 구매 고객을 위한 혜택입니다. 적용 기준과 관리 혜택의 자세한 내용은 구매 전 상담해주세요.</p></div>
         </div>
-        <a className="button care-consult" href="tel:01065644992"><Icon name="phone"/>구매·케어 혜택 상담</a>
+        <div className="store-purchase">
+          <p>내 손에 맞는 헤어·애견 가위를 만나보세요.</p>
+          <div className="store-purchase-actions">
+            <a className="button store-button" href={STORE_URL} target="_blank" rel="noopener noreferrer"><Icon name="package"/>스마트스토어에서 가위 구매 <span aria-hidden="true">↗</span><span className="sr-only"> · 새 창</span></a>
+            <a className="text-link" href="tel:01065644992">구매·케어 혜택 전화 상담</a>
+          </div>
+        </div>
       </section>
       <section id="repair-process" className="repair-process" aria-labelledby="repair-process-title">
         <div className="section-heading"><div><p className="eyebrow">수리 접수 안내</p><h2 id="repair-process-title">맡기기 전 상담부터, 수리 후 반송까지.</h2></div><p>택배를 보내기 전, 먼저 전화해주세요.</p></div>
@@ -79,7 +87,7 @@ export default function Home() {
         <div className="process-contact"><p>작업 기간과 배송비는 접수 상담 시 확인해주세요.</p><a className="text-link" href="tel:01065644992">접수 상담 010-6564-4992 ↗</a></div>
       </section>
       <section id="about" className="about"><Image className="about-portrait" src="/images/scissor-doctor-portrait-autumn.png" alt="가위닥터 장인 소개 초상화" width={112} height={140}/><p className="eyebrow">SINCE 1995 · 30년, 가위와 함께한 시간</p><h2>한 길을 걸어온 장인.<br/>그 곁의 약 1,000명.</h2><p>안녕하세요. 가위닥터 사사끼, 대표 김태희입니다.<br/>30년 동안 쌓아온 경험으로 가위날을 정교하게 복원합니다.<br/>손에 익은 가위가 제 역할을 할 수 있도록,<br/>오늘도 가위 하나에 집중합니다.</p><span className="brand-sign">가위닥터 사사끼</span><p className="owner">대표 김태희 · 사사끼 코리아 가위 A/S 센터</p></section>
-      <section id="contact" className="contact"><div><p className="eyebrow">가위닥터 사사끼 상담실</p><h2>가위가 예전 같지 않다면.</h2><p>연마·날 복원·수리부터 택배 접수까지 친절하게 안내해드립니다.<br/>가위 종류와 불편한 점을 말씀해주세요.</p><p className="secondary-service">미용·애견 가위 구매 및 현장 출장 판매도 전화로 문의해주세요.</p></div><div className="contact-actions"><a className="phone" href="tel:01065644992" aria-label="가위닥터 사사끼 전화 상담 010-6564-4992"><Icon name="phone"/>010-6564-4992 <span aria-hidden="true">↗</span></a><a className="phone" href="tel:01096444689" aria-label="가위닥터 사사끼 전화 상담 010-9644-4689"><Icon name="phone"/>010-9644-4689 <span aria-hidden="true">↗</span></a><a className="text-link" href="https://blog.naver.com/kuh4689/222617975844" target="_blank" rel="noopener noreferrer">가위닥터 사사끼 작업 이야기 ↗</a></div></section>
+      <section id="contact" className="contact"><div><p className="eyebrow">가위닥터 사사끼 상담실</p><h2>가위가 예전 같지 않다면.</h2><p>연마·날 복원·수리부터 택배 접수까지 친절하게 안내해드립니다.<br/>가위 종류와 불편한 점을 말씀해주세요.</p><p className="secondary-service">미용·애견 가위는 스마트스토어에서 확인하세요. 현장 출장 판매는 전화로 문의해주세요.</p></div><div className="contact-actions"><a className="button store-button" href={STORE_URL} target="_blank" rel="noopener noreferrer"><Icon name="package"/>스마트스토어에서 가위 구매 <span aria-hidden="true">↗</span><span className="sr-only"> · 새 창</span></a><a className="phone" href="tel:01065644992" aria-label="가위닥터 사사끼 전화 상담 010-6564-4992"><Icon name="phone"/>010-6564-4992 <span aria-hidden="true">↗</span></a><a className="phone" href="tel:01096444689" aria-label="가위닥터 사사끼 전화 상담 010-9644-4689"><Icon name="phone"/>010-9644-4689 <span aria-hidden="true">↗</span></a><a className="text-link" href="https://blog.naver.com/kuh4689/222617975844" target="_blank" rel="noopener noreferrer">가위닥터 사사끼 작업 이야기 ↗</a></div></section>
     </main>
     <footer className="business-footer">
       <div className="footer-heading"><a className="logo" href="#"><Icon name="scissors"/>가위닥터 사사끼<span>·</span></a><p>가위 연마 · 날 복원 · 수리 전문</p></div>
