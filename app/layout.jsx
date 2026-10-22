@@ -6,7 +6,7 @@ export const metadata = {
   applicationName: '가위닥터 사사끼',
   openGraph: {
     title: '내 손에 맞는 가위, 가위닥터 사사끼',
-    description: '전국 및 부산 가위 연마 · 사사끼 코리아 A/S 센터. 30년 장인의 정밀 날 복원. 대표 김태희 · 010-6564-4992 / 010-9644-4689',
+    description: '전국 및 부산 가위 연마·수리. 30년 장인의 정밀 날 복원. 대표 김태희 · 010-6564-4992 / 010-9644-4689',
     siteName: '가위닥터 사사끼',
     locale: 'ko_KR',
     type: 'website',
