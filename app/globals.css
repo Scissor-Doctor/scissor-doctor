@@ -77,3 +77,20 @@ body{background-image:radial-gradient(ellipse at 85% 8%,rgba(207,139,64,.09),tra
 .header nav{gap:16px}.care-benefits{margin-bottom:48px}.brand-introduction{margin-top:0}
 @media(max-width:700px){.shop-section{padding:24px 24px 40px}.shop-grid{grid-template-columns:1fr;gap:22px}.shop-card-copy{padding:24px}.shop-card-copy h3{font-size:24px}.care-benefits{margin-bottom:32px}.carousel-copy h2{font-size:clamp(24px,6.6vw,32px)}.header nav{justify-content:flex-start;gap:14px}.mobile-store-link{display:flex;align-items:center;justify-content:center;gap:8px;flex:1;min-width:0;min-height:48px;padding:8px;border:1px solid #844923;border-radius:6px;color:#844923;font-size:12px;text-align:center;background:#fffaf3}.mobile-store-link strong{display:block;font-size:13px;margin-top:3px}.mobile-contact-bar .mobile-call-link{min-width:0}.mobile-call-link strong{font-size:13px}}
 @media(prefers-reduced-motion:reduce){.shop-card{transition:none}}
+
+/* Readable Korean typography, served locally with character-based font subsets. */
+body{font-family:'Noto Sans KR Variable','Apple SD Gothic Neo','Malgun Gothic',sans-serif;font-size:16px;line-height:1.8;letter-spacing:0}
+button,input,select,textarea{font:inherit}
+h1,h2,h3{font-weight:600;letter-spacing:-.035em;line-height:1.55;overflow-wrap:anywhere}
+p{overflow-wrap:anywhere}
+.brand-sign{font-family:inherit;font-style:normal;font-weight:600}
+.header nav{font-size:14px;line-height:1.6}
+.section-heading>p,.service-grid article>p,.service-notes p,.repair-steps p,.process-contact p,.about>p:not(.eyebrow),.contact p:not(.eyebrow),.contact .secondary-service,.introduction-copy,.care-benefit-grid p,.shop-card-copy>p:not(.eyebrow){font-size:15px;line-height:1.95}
+.business-info,.business-footer small,.introduction-contact,.care-conditions p,.shop-disclaimer{font-size:14px;line-height:1.9}
+.eyebrow,.service-type,.carousel-copy .eyebrow{font-size:12px!important;letter-spacing:.08em;line-height:1.8}
+.carousel-description{font-size:16px;line-height:1.95}
+.carousel-caption,.carousel-region,.carousel-credentials>span,.care-card-label,.text-link{font-size:14px;line-height:1.8}
+.carousel-copy h2{letter-spacing:-.035em}
+.button{font-size:14px;line-height:1.7}
+.phone{letter-spacing:0;font-variant-numeric:tabular-nums}
+@media(max-width:700px){.header nav{font-size:13px;gap:12px}.carousel-copy{min-height:380px}.carousel-copy .eyebrow{letter-spacing:.03em}.carousel-description{font-size:15px;min-height:0}.carousel-caption,.carousel-region,.carousel-credentials>span{font-size:13px}.carousel-actions .button,.carousel-actions .text-link,.store-purchase-actions .store-button,.contact-actions .store-button{font-size:13px}.care-heading .eyebrow{letter-spacing:.04em}.business-info dt{min-width:105px}.care-conditions p{font-size:14px}.mobile-contact-bar{gap:8px}.mobile-call-link strong,.mobile-store-link strong{font-size:13px}}
