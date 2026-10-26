@@ -94,3 +94,14 @@ p{overflow-wrap:anywhere}
 .button{font-size:14px;line-height:1.7}
 .phone{letter-spacing:0;font-variant-numeric:tabular-nums}
 @media(max-width:700px){.header nav{font-size:13px;gap:12px}.carousel-copy{min-height:380px}.carousel-copy .eyebrow{letter-spacing:.03em}.carousel-description{font-size:15px;min-height:0}.carousel-caption,.carousel-region,.carousel-credentials>span{font-size:13px}.carousel-actions .button,.carousel-actions .text-link,.store-purchase-actions .store-button,.contact-actions .store-button{font-size:13px}.care-heading .eyebrow{letter-spacing:.04em}.business-info dt{min-width:105px}.care-conditions p{font-size:14px}.mobile-contact-bar{gap:8px}.mobile-call-link strong,.mobile-store-link strong{font-size:13px}}
+
+/* Main hero video keeps the full square frame visible on desktop and mobile. */
+.video-hero h1{font-size:clamp(28px,3vw,41px);line-height:1.55;letter-spacing:-.035em;margin:0;font-weight:600;word-break:keep-all}
+.video-hero h1 span{color:#844923}
+.hero-video-frame{position:relative;aspect-ratio:1;min-width:0;background:#f0dfc8;overflow:hidden}
+.hero-video{display:block;width:100%;height:100%;object-fit:contain}
+.hero-video-toggle{position:absolute;right:16px;bottom:16px;min-height:44px;padding:10px 16px;border:1px solid rgba(255,255,255,.65);border-radius:6px;background:rgba(40,26,17,.85);color:#fff;font-size:13px;cursor:pointer;line-height:1.6}
+.hero-video-toggle:hover{background:#493226}.hero-video-toggle:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.hero-video-error{position:absolute;bottom:0;left:0;right:0;margin:0;padding:16px;background:#fffaf3;color:#493226;font-size:14px;line-height:1.8}
+.hero-video-error a{text-decoration:underline}
+@media(max-width:700px){.video-hero h1{font-size:clamp(25px,6.6vw,32px)}.video-hero .carousel-copy{min-height:0}.hero-video-toggle{right:12px;bottom:12px}}

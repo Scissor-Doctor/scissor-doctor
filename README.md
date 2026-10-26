@@ -16,7 +16,7 @@
 
 내용 참고: https://blog.naver.com/kuh4689/222617975844
 
-히어로는 3장의 광고 이미지를 배치한 스와이프형 슬라이더입니다. 6.5초 자동 재생, 정지·재생, 이전·다음, 광고 선택, 키보드 방향키 및 이미지 터치 스와이프를 지원합니다. 수동 조작 후 자동 재생이 멈추고, 마우스·키보드 포커스가 머무는 동안에도 일시 정지합니다. 움직임 줄이기 설정에서는 자동 재생과 전환 애니메이션을 끕니다.
+메인 히어로에는 사용자 제공 애견미용 영상을 배치했습니다. 웹용 H.264 MP4(720×720, 약 69초, 약 6.1MB)로 변환하여 무음 반복 재생하며, 일시 정지·재생 버튼을 제공합니다. 움직임 줄이기 설정에서는 자동 재생하지 않습니다. 모바일에서도 영상 비율을 유지하고, 자동 재생이 제한되면 포스터와 재생 버튼을 표시합니다. 영상은 `public/videos/scissor-doctor-hero.mp4`, 포스터는 `public/images/hero-video-poster.jpg`입니다.
 
 이미지는 `public/images/hero-sharpening-autumn.png`, `hero-hair-autumn.png`, `hero-pet-autumn.png`이며 제작 프롬프트는 `docs/hero-ad-prompts.md`에 기록했습니다. 사용자 제공 인물 사진을 변환한 `scissor-doctor-portrait-autumn.png`는 장인 소개 영역에 배치했습니다.
 
